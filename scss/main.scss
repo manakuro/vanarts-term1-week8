@@ -1,0 +1,94 @@
+ /*--------------------------
+        BASE
+----------------------------*/
+@import 'partials/_config.scss';
+@import 'partials/_base.scss';
+@import 'partials/module.scss';
+
+/* --------------------------
+        LAYOUT
+----------------------------*/
+// Modules will scale with document
+.page-header {
+    font-size: 1rem;
+}
+
+.hero-area {
+    font-size: 1rem;
+}
+
+.form {
+    font-size: 1rem;
+
+    // Desktop L
+    // @include respond-to(l) {
+    //     font-size: .8rem;
+    // }
+
+}
+
+/* --------------------------
+        HEADER
+----------------------------*/
+// Common Setting
+$page-header-top-space: 2rem;
+$nav-inner-space: 1rem;
+.page-header {
+    font-family: $heading-font;
+}
+
+
+
+
+
+/*---------------------------
+    FOOTER SECTION
+---------------------------*/
+.page-footer {
+    padding: 2rem;
+    background: $black;
+    position: relative;
+
+    // social media link
+    .social {
+        margin-top: 1rem;
+        text-align: left;
+
+        li {
+            display: inline-block;
+            margin: 0 1rem 0 0;
+        }
+
+        a {
+            color: $white;
+            font-size: 0;
+
+            .fa {
+                font-size: 1.5rem;
+            }
+
+            @include hover(color);
+        }
+        
+    }
+
+}
+
+
+/* --------------------------
+        STATES
+----------------------------*/
+
+
+
+
+
+/*---------------------------
+    ANIMATION
+---------------------------*/
+@import 'partials/_animation.scss';
+
+/* --------------------------
+    Print
+----------------------------*/
+@import 'partials/_print.scss';
