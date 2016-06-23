@@ -10,21 +10,12 @@
 ----------------------------*/
 // Modules will scale with document
 .page-header {
-    font-size: 1rem;
 }
 
 .hero-area {
-    font-size: 1rem;
 }
 
 .form {
-    font-size: 1rem;
-
-    // Desktop L
-    // @include respond-to(l) {
-    //     font-size: .8rem;
-    // }
-
 }
 
 /* --------------------------
@@ -33,46 +24,147 @@
 // Common Setting
 $page-header-top-space: 2rem;
 $nav-inner-space: 1rem;
+
+%nav-text {
+    font-size: 1.5em;
+    font-weight: 100;
+    text-transform: uppercase;
+    transition: color .25s;
+
+    &:hover {
+        color: $main-colour;
+    }
+}
+
 .page-header {
-    font-family: $heading-font;
+    margin-top: 5rem;
+    min-height: 13rem;
+    font-family: $nav-font;
+
+    .nav-list {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2rem;
+    }
+
+    .nav-item {
+
+        a {
+            @extend %nav-text;
+        }
+        
+    }
+
+}
+
+// .page-nav a {
+//     display: block;
+//     padding: 10px;
+//     font-size: 24px;
+//     color: #060606;
+//     text-transform: uppercase;  
+// }
+
+/* --------------------------
+        HERO AREA
+----------------------------*/
+.hero-area {
+    // min-height: 100vh;
+    position: relative;
+}
+
+.hero-list {
+    display: flex;
+}
+
+.cta-wrapper {
+    position: absolute;
+    left: 50%;
+    top: 30vw;
+    margin-left: -5rem;
 }
 
 
+/* --------------------------
+        HOME PRODUCTS
+----------------------------*/
+%gallery-list-p {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin-top: .5rem;
+}
+.sec-home-gallery-list {
+    margin-bottom: 2rem;
+
+    // title
+    .sec-home-gallery-list-title {
+        @extend %gallery-list-p;
+    }
+
+    // desc
+    .sec-home-gallery-list-desc {
+        @extend %gallery-list-p;
+    }
+
+    // price
+    .sec-home-gallery-list-price {
+        @extend %gallery-list-p;
+    }
+}
+
+
+
+
+
+/* --------------------------
+        FOOTER
+----------------------------*/
+// divider
+.page-footer-divider {
+    border-top: 1px solid $light-grey;
+}
+
+.page-footer-inner {
+    padding: 3rem 0;
+
+    // nav menu
+    .nav-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .nav-item {
+
+        a {
+            @extend %nav-text;
+        }
+        
+    }
+
+    .social {
+        margin-top: 2rem;
+    }    
+
+}
+
+.copyright {
+    font-size: 1.3em;
+    font-weight: 100;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.bb {
+    box-shadow: inset 0 -1px rgba(0,0,0,.2);
+}
 
 
 
 /*---------------------------
     FOOTER SECTION
 ---------------------------*/
-.page-footer {
-    padding: 2rem;
-    background: $black;
-    position: relative;
-
-    // social media link
-    .social {
-        margin-top: 1rem;
-        text-align: left;
-
-        li {
-            display: inline-block;
-            margin: 0 1rem 0 0;
-        }
-
-        a {
-            color: $white;
-            font-size: 0;
-
-            .fa {
-                font-size: 1.5rem;
-            }
-
-            @include hover(color);
-        }
-        
-    }
-
-}
 
 
 /* --------------------------

@@ -12,12 +12,13 @@ $light-grey: #6B6868;
 $ex-light-grey: rgba(235, 235, 235, .5);
 $pink: rgba(255,192,203, 1);
 $light-blue: #0099ff;
+$gold: #e1a852;
 
 // background colour
 $main-bg: #ebebeb;
 
 // primary colour
-$main-colour: #e51228;
+$main-colour: $gold;
 $tag-colour: #ffff00;
 
 $error: #FF0000;
@@ -26,8 +27,18 @@ $error: #FF0000;
 /*---------------------------
     Fonts
 ---------------------------*/
-$body-font: 'Roboto', 'Lato';
-$heading-font: 'Oswald', Calibri;
+@font-face {
+    font-family: 'brotherhood';
+    src: url('../fonts/brotherhood_script-webfont.woff2') format('woff2'),
+         url('../fonts/brotherhood_script-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$body-font: 'Lato';
+$heading-font: 'Lato';
+$subhead-font: 'brotherhood';
+$nav-font: 'Lato';
 
 /*---------------------------
     MEDIA QUERY

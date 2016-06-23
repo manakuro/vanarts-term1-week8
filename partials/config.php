@@ -1,8 +1,7 @@
 <?php
-
 $config = array(
     // Title
-    'title' => 'FS',
+    'title' => 'Free Spirit',
 
     // Meta
     'meta' => array(
@@ -11,89 +10,34 @@ $config = array(
 
     // Navigation
     'nav' => array(
-        'news' => array(
-            'name' => 'News',
-            'href' => 'news.php',
-            'class' => 'parent-list',
-
-            'sub_menu' => array(
-                'hip_hop' => array(
-                    'name' => 'Hip Hop',
-                    'class' => '',
-                    'href' => 'news.php?genre=hip_hop',
-                ),
-                'rb' => array(
-                    'name' => 'R&B',
-                    'class' => '',
-                    'href' => 'news.php?genre=rb',
-                ),
-                'pop' => array(
-                    'name' => 'Pop',
-                    'class' => '',
-                    'href' => 'news.php?genre=pop',
-                ),
-                'rock' => array(
-                    'name' => 'Rock',
-                    'class' => '',
-                    'href' => 'news.php?genre=rock',
-                ),
-                'punk' => array(
-                    'name' => 'Punk',
-                    'class' => '',
-                    'href' => 'news.php?genre=punk',
-                ),
-                'reggae' => array(
-                    'name' => 'Reggae',
-                    'class' => '',
-                    'href' => 'news.php?genre=reggae',
-                ),
-                'dance' => array(
-                    'name' => 'Dance',
-                    'class' => '',
-                    'href' => 'news.php?genre=dance',
-                )
-            )
-        ),
-        'hot_songs' => array(
-            'name' => 'Hot Songs',
-            'class' => '',
-            'href' => 'hotsongs.php',
+        'gallery' => array(
+            'name' => 'Gallery',
+            'class' => 'link',
+            'href' => 'gallery.php',
             'sub_menu' => array()
         ),
-        'charts' => array(
-            'name' => 'Charts',
-            'class' => '',
-            'href' => 'charts.php',
+        'style' => array(
+            'name' => 'Style',
+            'class' => 'link',
+            'href' => 'style.php',
             'sub_menu' => array()
         ),
-        'features' => array(
-            'name' => 'Features',
-            'class' => '',
-            'href' => 'features.php',
+        'products' => array(
+            'name' => 'Products',
+            'class' => 'link',
+            'href' => 'products.php',
             'sub_menu' => array()
         ),
-        'reviews' => array(
-            'name' => 'reviews',
-            'class' => '',
-            'href' => 'reviews.php',
+        'order' => array(
+            'name' => 'Order',
+            'class' => 'link',
+            'href' => 'order.php',
             'sub_menu' => array()
         ),
-        'videos' => array(
-            'name' => 'videos',
-            'class' => '',
-            'href' => 'videos.php',
-            'sub_menu' => array()
-        ),
-        'events' => array(
-            'name' => 'events',
-            'class' => '',
-            'href' => 'events.php',
-            'sub_menu' => array()
-        ),
-        'interviews' => array(
-            'name' => 'interviews',
-            'class' => '',
-            'href' => 'interviews.php',
+        'contact' => array(
+            'name' => 'Contact',
+            'class' => 'link',
+            'href' => 'contact.php',
             'sub_menu' => array()
         )
 
@@ -129,37 +73,139 @@ $config = array(
 
     // Home
     'home' => array(
+        'hero_lists' => array(
+            array(
+                'img' => 'img/home/hero_lists_1.jpg',
+                'title' => 'Style of hat'
+            ),
+            array(
+                'img' => 'img/home/hero_lists_4.jpg',
+                'title' => 'Style of hat'
+            ),
+            array(
+                'img' => 'img/home/hero_lists_3.jpg',
+                'title' => 'Style of hat'
+            ),
+            array(
+                'img' => 'img/home/hero_lists_8.jpg',
+                'title' => 'Style of hat'
+            )
+        ),
+
+        'gallery_list' => array(
+            array(
+                'img' => 'img/gallery/gallery-1.jpg',
+                'title' => 'RABBIT FUR FELT LARGE BRIM HAT',
+                'desc' => 'Grosgrain hatband',
+                'price' => '$99.00'
+            ),
+            array(
+                'img' => 'img/gallery/gallery-2.jpg',
+                'title' => 'RABBIT FUR FELT LARGE BRIM HAT',
+                'desc' => 'Grosgrain hatband',
+                'price' => '$119.00'
+            ),
+            array(
+                'img' => 'img/gallery/gallery-3.jpg',
+                'title' => 'RABBIT FUR FELT LARGE BRIM HAT',
+                'desc' => 'Grosgrain hatband',
+                'price' => '$199.00'
+            ),
+            array(
+                'img' => 'img/gallery/gallery-4.jpg',
+                'title' => 'RABBIT FUR FELT LARGE BRIM HAT',
+                'desc' => 'Grosgrain hatband',
+                'price' => '$199.00'
+            ),
+            array(
+                'img' => 'img/gallery/gallery-5.jpg',
+                'title' => 'RABBIT FUR FELT LARGE BRIM HAT',
+                'desc' => 'Grosgrain hatband',
+                'price' => '$299.00'
+            ),
+            array(
+                'img' => 'img/gallery/gallery-6.jpg',
+                'title' => 'RABBIT FUR FELT LARGE BRIM HAT',
+                'desc' => 'Grosgrain hatband',
+                'price' => '$199.00'
+            ),
+            array(
+                'img' => 'img/gallery/gallery-1.jpg',
+                'title' => 'RABBIT FUR FELT LARGE BRIM HAT',
+                'desc' => 'Grosgrain hatband',
+                'price' => '$199.00'
+            ),
+            array(
+                'img' => 'img/gallery/gallery-3.jpg',
+                'title' => 'RABBIT FUR FELT LARGE BRIM HAT',
+                'desc' => 'Grosgrain hatband',
+                'price' => '$199.00'
+            ),
+            array(
+                'img' => 'img/gallery/gallery-5.jpg',
+                'title' => 'RABBIT FUR FELT LARGE BRIM HAT',
+                'desc' => 'Grosgrain hatband',
+                'price' => '$299.00'
+            ),
+            array(
+                'img' => 'img/gallery/gallery-1.jpg',
+                'title' => 'RABBIT FUR FELT LARGE BRIM HAT',
+                'desc' => 'Grosgrain hatband',
+                'price' => '$99.00'
+            ),
+            array(
+                'img' => 'img/gallery/gallery-2.jpg',
+                'title' => 'RABBIT FUR FELT LARGE BRIM HAT',
+                'desc' => 'Grosgrain hatband',
+                'price' => '$119.00'
+            ),
+            array(
+                'img' => 'img/gallery/gallery-3.jpg',
+                'title' => 'RABBIT FUR FELT LARGE BRIM HAT',
+                'desc' => 'Grosgrain hatband',
+                'price' => '$199.00'
+            ),
+            array(
+                'img' => 'img/gallery/gallery-4.jpg',
+                'title' => 'RABBIT FUR FELT LARGE BRIM HAT',
+                'desc' => 'Grosgrain hatband',
+                'price' => '$199.00'
+            ),
+            array(
+                'img' => 'img/gallery/gallery-5.jpg',
+                'title' => 'RABBIT FUR FELT LARGE BRIM HAT',
+                'desc' => 'Grosgrain hatband',
+                'price' => '$299.00'
+            ),
+            array(
+                'img' => 'img/gallery/gallery-6.jpg',
+                'title' => 'RABBIT FUR FELT LARGE BRIM HAT',
+                'desc' => 'Grosgrain hatband',
+                'price' => '$199.00'
+            ),
+            array(
+                'img' => 'img/gallery/gallery-1.jpg',
+                'title' => 'RABBIT FUR FELT LARGE BRIM HAT',
+                'desc' => 'Grosgrain hatband',
+                'price' => '$199.00'
+            ),
+            array(
+                'img' => 'img/gallery/gallery-3.jpg',
+                'title' => 'RABBIT FUR FELT LARGE BRIM HAT',
+                'desc' => 'Grosgrain hatband',
+                'price' => '$199.00'
+            ),
+            array(
+                'img' => 'img/gallery/gallery-5.jpg',
+                'title' => 'RABBIT FUR FELT LARGE BRIM HAT',
+                'desc' => 'Grosgrain hatband',
+                'price' => '$299.00'
+            ),
+        )
     ),
 
     // Footer
     'footer' => array(
-        'categories' => array(
-            array(
-                'name' => 'hiphop'
-            ),
-            array(
-                'name' => 'r&b'
-            ),
-            array(
-                'name' => 'pop'
-            ),
-            array(
-                'name' => 'rock'
-            ),
-            array(
-                'name' => 'punk'
-            ),
-            array(
-                'name' => 'reggae'
-            ),
-            array(
-                'name' => 'reviews'
-            ),
-            array(
-                'name' => 'news'
-            )
-
-        )
 
     ),
 

@@ -2,8 +2,8 @@
     MODULES
 ----------------------------*/
 @mixin page-header-input-style {
-    height: 2.5rem;
-    padding: .5rem;
+    height: 3.5rem;
+    padding: 1rem;
 }
 
 @mixin hover($ele, $child: '') {
@@ -34,10 +34,10 @@
 
 @mixin btn-style($width) {
     display: block;
-    padding: .5em;
+    padding: .5rem;
     font-family: $heading-font;
     font-weight: 500;
-    font-size: 1em;
+    font-size: 1.5em;
     color: $white;
     background-color: $main-colour;
     border: none;
@@ -66,6 +66,35 @@
 
 }
 
+.sec-title {
+    font-family: $subhead-font;
+    font-size: 7rem;
+    font-weight: 500;
+    color: $main-colour;
+
+    &:before {
+        content: '';
+        height: 1px;
+        width: 10%;
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        display: inline-block;
+        background-color: $main-colour;
+    }
+
+    &:after {
+        content: '';
+        height: 1px;
+        width: 10%;
+        position: absolute;
+        top: 50%;
+        right: 0%;
+        display: inline-block;
+        background-color: $main-colour;
+    }
+}
+
 .sec-heading-wrapper {
     position: relative;
     background: $main-bg;
@@ -83,37 +112,6 @@
 
 }
 
-/*-- Heading styling for each sections --*/
-.sec-heading {
-    @include btn-style(10rem);
-    font-size: 1.3rem;
-}
-
-// Headline style for top image
-.sec-top-img-headline {
-    @include btn-style(100%);
-
-    font-size: 1.5rem;
-    padding: .3rem;
-    text-transform: none;
-    text-align: center;
-
-}
-
-/*-- Button styling for tags --*/
-.tag {
-    display: inline-block;
-    margin: 0 .5rem;
-    padding: 0 1rem;
-    font-family: $heading-font;
-    font-weight: 500;
-    font-size: .8rem;
-    color: $black;
-    background-color: $tag-colour;
-    border: none;
-    text-transform: uppercase;
-    text-align: center;
-}
 
 /*-- Styling for archive list --*/
 .sec-list {
@@ -155,11 +153,11 @@
     SOCIAL MEDIA
 ----------------------------*/
 .social {
-    text-align: right;
+    // text-align: right;
 
     li {
         display: inline-block;
-        margin-left: 1rem;
+        margin-right: 1.5rem;
     }
 
     .social-link {
@@ -167,7 +165,7 @@
         font-size: 0;
 
         .fa {
-            font-size: 1.5rem;
+            font-size: 2rem;
         }
 
         @include hover(color);
@@ -202,13 +200,13 @@
     NEWSLETTER FORM
 ----------------------------*/
 .newsletter-form {
-
     position: relative;
     font-family: $heading-font;
 
     .newsletter-input {
-        width: 65%;
-        font-size: .7rem;
+        width: 80%;
+        font-size: 1.5rem;
+        font-weight: 100;
         @include page-header-input-style();
         @include focus-input();
 
@@ -221,8 +219,8 @@
         position: absolute;
         right: 0;
         top: 0;
-        height: 2.5rem;
-        width: 5rem;
+        height: 3.5rem;
+        width: 7rem;
     }
 
 }

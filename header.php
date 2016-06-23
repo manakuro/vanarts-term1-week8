@@ -27,7 +27,7 @@
         <!-- Place favicon.ico in the root directory -->
 
         <!-- CSS -->
-        <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,100italic,100|Oswald:400,300,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700,700italic|Lato:400,300,400italic,700' rel='stylesheet' type='text/css'>        
         <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/libs/normalize.css">
         <link rel="stylesheet" href="css/libs/magnific-popup.css">
@@ -42,30 +42,14 @@
         <!-- header -->
         <header class="page-header">
             
-            <div class="row header-inner">
-            
-                <div class="span-l-2 columns">
-                    <div class="logo">
-                        <a href="<?php echo BASE_URL; ?>"><img src="img/logo.png"></a>
-                    </div>
-                </div>
+            <div class="page-nav row">
 
-            </div>
-
-            <div class="nav-wrapper">
+                <div class="logo span-l-3 columns">
+                        <a href="./"><img src="img/logo.png"></a>                
+                </div>               
                 
-                <div class="row">
-
-                    <div class="span-l-12 columns">
-                        
-                        <nav class="nav">
-                            
-                            <ul class="nav-list"><?php echo $navHTML; ?></ul>
-
-                        </nav>
-
-                    </div>
-                    
+                <div class="span-l-5 offset-l-4 columns">
+                    <ul class="nav-list"><?php echo $navHTML; ?></ul>
                 </div>
 
             </div>
